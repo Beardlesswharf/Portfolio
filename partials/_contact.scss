@@ -1,0 +1,12 @@
+.contact-form {
+    display: flex;
+    margin-left: 163.766px;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+@media (max-width: 750px) {
+    .contact-form {
+        margin: 0;
+    }
+}

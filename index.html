@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Luke Titus | Web Developer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://kit.fontawesome.com/b6cfc918b1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;400;600&display=swap" rel="stylesheet"> 
+</head>
+
+  <header>
+    <video id="background-video" autoplay loop muted poster="img/Ink.mp4_000000166.png">
+      <source src="media/Inkc.m4v" type="video/mp4">
+    </video>
+      <h1>Hello...<br>My name is Luke</h1>
+      <a href="#projects"><i class="fa-solid fa-angles-down"></i></a>
+  </header>
+  <nav class="nav">
+    <a href="#"><img class="logo" src="/img/logo.png"></a>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#portfolio">My Porfolio</a></li>
+          <li><a href="#examples">Coding Examples</a></li>
+          <li><a href="#scs">SCS Scheme</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul> 
+        <div class="socmedia">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+  </nav>
+<body>
+  
+  <div id="projects" class="projects">
+    <h2>Current Projects</h2>
+  </div>
+<!-- <div class="marg">  -->
+<div class="gal-row">
+  <div class="box">
+    <a target="_blank" href="img/netmatters.png">
+      <img src="img/netmatters.png" alt="netmatters recreation" width="600" height="400">
+    </a>
+    <div class="desc">Netmatters Home Page Recreation<br>
+    This is an ongoing project.</div>
+  </div>
+  <div class="box">
+    <a target="_blank" href="img/Web capture_13-7-2022_122852_127.0.0.1.jpeg">
+      <img src="img/Web capture_13-7-2022_122852_127.0.0.1.jpeg" alt="Portfolio site" width="600" height="400">
+    </a>
+    <div class="desc">My Portfolio...Look familiar?<br>
+      This is an ongoing project.</div>
+  </div>
+  <div class="box">
+    <a target="_blank" href="img/asws-logo-new-1200x900.jpeg">
+      <img src="img/asws-logo-new-1200x900.jpeg" alt="Coming Soon..." width="600" height="400">
+    </a>
+    <div class="desc">Coming Soon...<br>Aikido Shobukai West Suffolk<br>
+   A new site for an Aikido Dojo. </div>
+  </div>
+  <div class="box">
+    <a target="_blank" href="img/istockphoto-1124252772-170667a.jpg">
+      <img src="img/istockphoto-1124252772-170667a.jpg" alt="website under Construction" width="600" height="400">
+    </a>
+    <div class="desc">More Wizardly Prognostications<br>
+    Being Forecast.</div>
+  </div>
+</div>
+<div class="contact-form">
+    <div id="after_submit"></div>
+  <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+    <div class="row">
+      <label class="required" for="name">Your name:</label><br />
+      <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+      <span id="name_validation" class="error_message"></span>
+    </div>
+    <div class="row">
+      <label class="required" for="email">Your email:</label><br />
+      <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+      <span id="email_validation" class="error_message"></span>
+    </div>
+    <div class="row">
+      <label class="required" for="message">Your message:</label><br />
+      <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+      <span id="message_validation" class="error_message"></span>
+    </div>
+      
+      <input id="submit_button" type="submit" value="Send email" />
+  </form>
+</div>
+</body>
+  <!-- <div class="cont-con">
+    <h2 class="projects">Projects</h2>
+    <img class="netbuild" src="/img/netmatters.png"> -->
+
+    <!-- <div class="content-about">
+      <h2 id="about">About Me</h2>
+      <p>In this layout, we display the areas in source order for any screen less that 500 pixels wide. We go to a two column layout, and then to a three column layout by redefining the grid, and the placement of items on the grid.</p>
+    </div>
+    <div class="content-portfolio">
+      <h2 id="portfolio">My Portfolio</h2>
+      <p>In this layout, we display the areas in source order for any screen less that 500 pixels wide. We go to a two column layout, and then to a three column layout by redefining the grid, and the placement of items on the grid.</p>
+    </div>
+    <div class="content-code">
+      <h2 id="examples">Coding Examples</h2>
+      <p>In this layout, we display the areas in source order for any screen less that 500 pixels wide. We go to a two column layout, and then to a three column layout by redefining the grid, and the placement of items on the grid.</p>
+    </div>
+    <div class="content-scs">
+      <h2 id="scs">SCS Scheme</h2>
+      <p>Introduction to Scion Coalition Scheme<br>
+        The Scion Coalition Scheme is an intensive, specially tailored training program run by Netmatters in order to give willing candidates the opportunity to enter the industry as web developers. Under the supervision of senior web developers, scions generally aim to complete training within six to nine months. The course is intensive and therefore the level of learning achieved is extensive in a short space of time.<br>
+        
+        Treehouse<br>
+        Treehouse is an online learning community, featuring videos covering a number of topics from basic HTML to C# programming, iOS development, data analysis, and more. By completing courses users can earn points, allowing them to track their progress and see how much they?ve covered in certain areas.
+        Total Score
+        teamtreehouse.com/xxxxx<br>
+        About Netmatters
+        Established in 2008
+        Norfolk's leading technology company
+        Winner of the Princess Royal Training Award
+        Winner of EDP Skills of Tomorrow Award
+        80+ staff, 2 locations across Norfolk
+        Digital Marketing, Website & Software development & IT Support
+        Broad spectrum of clients, working nationwide
+        Operate to strict company values</p>
+    </div> -->
+  <!-- </div> -->
+
+<!-- <aside class="side">Sidebar</aside>
+<div class="ad">Advertising</div>
+<footer class="main-footer">The footer</footer>
+</div> -->
+
+
+  
+  
+
+  
+

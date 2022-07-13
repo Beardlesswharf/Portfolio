@@ -1,0 +1,21 @@
+// [class^="content"] {
+//     @include content;
+//   }
+  
+//   .cont-con {
+//     display: flex;
+//     flex-direction: column;
+//     padding-right: 15px;
+//     padding-left: 15px;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: cover;
+//     background-image: url(../img/inklong.jpg);
+//     margin-left: 163.766px;     
+//   }
+  @media (max-width: 750px) {
+    .cont-con {
+        margin-left: 0px;
+    }
+}
+

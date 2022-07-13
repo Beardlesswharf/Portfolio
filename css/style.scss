@@ -1,0 +1,13 @@
+@import '../partials/normalize';
+@import '../partials/html';
+@import '../partials/mixin';
+@import '../partials/main';
+@import '../partials/nav';
+@import '../partials/header';
+@import '../partials/imggallery';
+@import '../partials/contact';
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
