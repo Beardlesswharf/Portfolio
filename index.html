@@ -14,11 +14,17 @@
 </head>
 
   <header>
+    <div class="vidwrap">
     <video id="background-video" autoplay loop muted poster="img/Ink.mp4_000000166.png">
       <source src="media/Inkc.m4v" type="video/mp4">
     </video>
-      <h1>Hello...<br>My name is Luke</h1>
-      <a href="#projects"><i class="fa-solid fa-angles-down"></i></a>
+    <div class="ovly-flex">
+    <h1>Hello...<br>My name is Luke</h1>
+    <a href="#projects"><i class="fa-solid fa-angles-down cream"></i></a> 
+  </div>
+  </div>
+  <!-- <h1>Hello...<br>My name is Luke</h1>
+  <a href="#projects"><i class="fa-solid fa-angles-down cream"></i></a> -->
   </header>
   <nav class="nav">
     <a href="#"><img class="logo" src="/img/logo.png"></a>
@@ -37,42 +43,92 @@
         </div>
   </nav>
 <body>
-  
+<div class="pwrap">
   <div id="projects" class="projects">
-    <h2>Current Projects</h2>
+      <h2>Current Projects</h2>   
   </div>
-<!-- <div class="marg">  -->
-<div class="gal-row">
-  <div class="box">
-    <a target="_blank" href="img/netmatters.png">
-      <img src="img/netmatters.png" alt="netmatters recreation" width="600" height="400">
-    </a>
-    <div class="desc">Netmatters Home Page Recreation<br>
-    This is an ongoing project.</div>
-  </div>
-  <div class="box">
-    <a target="_blank" href="img/Web capture_13-7-2022_122852_127.0.0.1.jpeg">
-      <img src="img/Web capture_13-7-2022_122852_127.0.0.1.jpeg" alt="Portfolio site" width="600" height="400">
-    </a>
-    <div class="desc">My Portfolio...Look familiar?<br>
+  <div class="gal-row">
+    <div class="box">
+      <a target="_blank" href="img/netmatters.png">
+        <img src="img/netmatters.png" alt="netmatters recreation" width="600" height="400">
+      </a>
+      <div class="desc">Netmatters Home Page Recreation<br>
       This is an ongoing project.</div>
+    </div>
+    <div class="box">
+      <a target="_blank" href="img/Web capture_13-7-2022_122852_127.0.0.1.jpeg">
+        <img src="img/Web capture_13-7-2022_122852_127.0.0.1.jpeg" alt="Portfolio site" width="600" height="400">
+      </a>
+      <div class="desc">My Portfolio...Look familiar?<br>
+        This is an ongoing project.</div>
+    </div>
+    <div class="box">
+      <a target="_blank" href="img/asws-logo-new-1200x900.jpeg">
+        <img src="img/asws-logo-new-1200x900.jpeg" alt="Coming Soon..." width="600" height="400">
+      </a>
+      <div class="desc">Coming Soon...<br>Aikido Shobukai West Suffolk<br>
+    A new site for an Aikido Dojo. </div>
+    </div>
+    <div class="box">
+      <a target="_blank" href="img/istockphoto-1124252772-170667a.jpg">
+        <img src="img/istockphoto-1124252772-170667a.jpg" alt="website under Construction" width="600" height="400">
+      </a>
+      <div class="desc">More Wizardly Prognostications<br>
+      Being Forecast.</div>
+     
+    </div> 
   </div>
-  <div class="box">
-    <a target="_blank" href="img/asws-logo-new-1200x900.jpeg">
-      <img src="img/asws-logo-new-1200x900.jpeg" alt="Coming Soon..." width="600" height="400">
-    </a>
-    <div class="desc">Coming Soon...<br>Aikido Shobukai West Suffolk<br>
-   A new site for an Aikido Dojo. </div>
-  </div>
-  <div class="box">
-    <a target="_blank" href="img/istockphoto-1124252772-170667a.jpg">
-      <img src="img/istockphoto-1124252772-170667a.jpg" alt="website under Construction" width="600" height="400">
-    </a>
-    <div class="desc">More Wizardly Prognostications<br>
-    Being Forecast.</div>
+  <div class="icncenter">
+  <i class="fa-solid fa-angles-down"></i>
+</div>
+</div>  
+
+<div class="divvy">
+  <div id="contact-form">
+    <div>
+      <h2>Nice to Meet You!</h2> 
+      <h4>Have a question or just want to get in touch? Let's chat.</h4> 
+    </div>
+      <p id="failure">Oopsie...message not sent.</p>  
+      <p id="success">Your message was sent successfully. Thank you!</p>
+
+        <form method="post" action="/">
+        <div>
+            <label for="name">
+              <span class="required">Name: *</span> 
+              <input type="text" id="name" name="name" value="" placeholder="Your Name" required="required" tabindex="1" autofocus="autofocus" />
+            </label> 
+        </div>
+        <div>
+            <label for="email">
+              <span class="required">Email: *</span>
+              <input type="email" id="email" name="email" value="" placeholder="Your Email" tabindex="2" required="required" />
+            </label>  
+        </div>
+        <div>		          
+            <label for="subject">
+            <span>Subject: </span>
+              <select id="subject" name="subject" tabindex="4">   
+                <option value="hello">Product Price Question</option>
+                <option value="quote">Where are my dragons?!</option>  
+                <option value="general">- Valar Morghulis - </option>
+              </select>
+            </label>
+        </div>
+        <div>		          
+            <label for="message">
+              <span class="required">Message: *</span> 
+              <textarea id="message" name="message" placeholder="Please write your message here." tabindex="5" required="required"></textarea> 
+            </label>  
+        </div>
+        <div>		           
+            <button name="submit" type="submit" id="submit" >SEND</button> 
+        </div>
+        </form>
+
   </div>
 </div>
-<div class="contact-form">
+<!-- <div class="contact-form">
     <div id="after_submit"></div>
   <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
     <div class="row">
@@ -93,7 +149,7 @@
       
       <input id="submit_button" type="submit" value="Send email" />
   </form>
-</div>
+</div> -->
 </body>
   <!-- <div class="cont-con">
     <h2 class="projects">Projects</h2>

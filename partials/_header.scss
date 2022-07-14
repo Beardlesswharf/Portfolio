@@ -1,57 +1,83 @@
-#background-video {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    // position: fixed;
-    // left: 0;
-    // right: 0;
-    // top: 0;
-    // bottom: 0;
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background-position: center;
-    // height: 100%;
-    z-index: -1;
-  }
-  
-  header {
-    display: flex;
-    flex-direction: column;
-  }
+// #background-video {
+//     width: 100vw;
+//     height: 100vh;
+//     object-fit: cover;
+//     // position: absolute;
+//     // left: 0;
+//     // right: 0;
+//     // top: 0;
+//     // bottom: 0;
+//     // background-repeat: no-repeat;
+//     // background-size: cover;
+//     // background-position: center;
+//     // height: 100%;
+//     z-index: -1;
+//   }
+video {
+  /** Simulationg background-size: cover */
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ovly-flex {
+  display: flex;
+  flex-direction: column;
+  margin-left: 166.273px;
+  height: 100vh;
+  justify-content: space-between;
   h1 {
     color: black;
-    text-align: center;
-    position: absolute;
-    top: 40%;
-    left: 48%;
-    transform: translate(-10%, -10%);
     z-index: 1;
     filter: drop-shadow(2px 4px 6px black);
     background-color: rgb(152 151 151 / 40%); /* Just adjust the color or opacity to make the text pop! */
     box-shadow: inset 0 0 0 200px rgb(255 255 255 / 8%);
     border-radius: 2px;
     padding: 10px 20px;
-    // margin-left: 178.766px;
+    margin-top: 30vh;
+    
+  }
+  .fa-angles-down {
+    color: black;
+    text-align: center;
+    z-index: 1;
+    filter: drop-shadow(2px 4px 6px black);
+    background-color: rgb(152 151 151 / 40%); /* Just adjust the color or opacity to make the text pop! */
+    box-shadow: inset 0 0 0 200px rgb(255 255 255 / 8%);
+    border-radius: 2px;
+    padding: 10px 20px;
+    font-size: 50px;
+  }
 }
-.fa-angles-down {
-  color: black;
-  text-align: center;
-  position: absolute;
-  // bottom: 1%;
-  // left: 52.25%;
-  //   transform: translate(-10%, -10%);
-  top: 45%;
-  left: 50%;
-  transform: translate(58%, 570%);
-  z-index: 1;
-  filter: drop-shadow(2px 4px 6px black);
-  background-color: rgb(152 151 151 / 40%); /* Just adjust the color or opacity to make the text pop! */
-  box-shadow: inset 0 0 0 200px rgb(255 255 255 / 8%);
-  border-radius: 2px;
-  padding: 10px 20px;
-  font-size: 50px;
-}
+  .vidwrap {
+    /* Telling our absolute positioned video to 
+    be relative to this element */
+    position: relative;
+  
+    min-height: 100vh;
+  
+    /* Will not allow the video to overflow the 
+    container */
+    overflow: hidden;
+  
+    /* Centering the container's content vertically 
+    and horizontally */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: start;
+  }
+
+  
   
 //   h1 {
 //     font-size: 6rem;
@@ -72,18 +98,14 @@
       background-position: center;
       height: 100%;
     }
-    h1 {
-      top: 42%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-    .fa-angles-down {
-      top: 95%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
   }
 
   .logo {
     border-radius: 50%;
+  }
+
+  @media (max-width: 750px) {
+    .ovly-flex {
+      margin-left: 0;
+    }
   }

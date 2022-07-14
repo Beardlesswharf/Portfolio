@@ -4,11 +4,32 @@
 //     margin-left: 163.766px;
 //     padding-left: 15px;
 // }
-.projects {
+.pwrap {
+  display: flex;
+  flex-direction: column;
+  scroll-snap-align: start;
+  min-height: 100vh;
+  // margin-left: 166.766px;
+  border-left-width: 166.766px;
+  border-left-style: solid;
+  border-image: linear-gradient(blue, black) 1;
+  // border-left: 166.766px solid black;
+  i {
+    filter: drop-shadow(2px 4px 6px black);
+    background-color: rgb(152 151 151 / 40%); /* Just adjust the color or opacity to make the text pop! */
+    box-shadow: inset 0 0 0 200px rgb(255 255 255 / 8%);
+    border-radius: 2px;
+    padding: 10px 20px;
+    font-size: 50px;
+    color: black;
+    z-index: 3;
+  }
+}
+
+.projects, .icncenter {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-left: 163.766px;
     margin-top: 30px;
     h2 {
         padding: 5px 15px;
@@ -25,9 +46,11 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 35px;
-    margin-left: 163.766px;
+    margin-bottom: 40px;
+    // margin-left: 166.766px;
     padding: 0 15px;
     justify-content: center;
+  
 }
 
 .box {
@@ -66,7 +89,11 @@
     text-align: center;
   }
   
- 
+ .scrollid {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+ }
 //   .responsive {
 //     padding: 0 15px;
 //   }
@@ -94,6 +121,11 @@
         margin: 0;
         margin-top: 30px;
     }
+}
+@media (max-width: 750px) {
+  .icncenter {
+      margin-left: 0;
+  }
 }
 
 //   div.gallery {
