@@ -1,0 +1,54 @@
+
+
+  .aboutme {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 100vh;
+    // margin-left: 166.766px;
+    border-left-width: 166.766px;
+    border-left-style: solid;
+    border-image: linear-gradient(#0c44cd, black) 1;
+    align-items: center;
+    text-align: center;
+    background-image: url(../img/pexels-cottonbro-9669096.jpg);
+      h1 {
+        margin: 50px 15px;
+        // margin-top: 50px;
+        padding: 5px 15px;
+        // margin-left: 15px;
+        // margin-right: 15px;
+        border-top: 5px solid rgba(252,94,221, 40%);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        filter: drop-shadow(2px 4px 6px silver);
+        background-color: rgba(255, 255, 255, 70%); /* Just adjust the color or opacity to make the text pop! */
+        box-shadow: inset 0 0 0 50px rgb(255 255 255 / 8%);
+      }
+      .wrap-this {
+        padding: 5px 15px;
+        margin: 0 15px;
+        border-bottom: 5px solid #be7eb3;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        filter: drop-shadow(2px 4px 6px silver);
+        background-color: rgba(255, 255, 255, 70%); /* Just adjust the color or opacity to make the text pop! */
+        box-shadow: inset 0 0 0 200px rgb(255 255 255 / 8%);
+      }
+  }
+.badges {
+  img {
+    max-height: 160px;
+    width: auto;
+    margin: 50px 30px;
+    filter: drop-shadow(2px 4px 6px silver);
+  }
+}
+
+  @media (max-width: 750px) {
+    .aboutme {
+        border-left: none;
+    }
+  }
