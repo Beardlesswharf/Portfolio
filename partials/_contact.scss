@@ -14,10 +14,10 @@
 .divvy {
     display: flex;
     flex-direction: row;
-    height: 100%;
+    min-height: 100vh;
     background-image: url(../img/t.jpg);
     justify-content: center;
-    scroll-snap-align: start;
+    scroll-snap-align: end;
 }
 h1 {
     margin: 10px 0 0 0;

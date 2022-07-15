@@ -7,12 +7,13 @@
 .pwrap {
   display: flex;
   flex-direction: column;
-  scroll-snap-align: start;
+  scroll-snap-align: center;
   min-height: 100vh;
   // margin-left: 166.766px;
   border-left-width: 166.766px;
   border-left-style: solid;
-  border-image: linear-gradient(blue, black) 1;
+  border-image: linear-gradient(#0c44cd, black) 1;
+  
   // border-left: 166.766px solid black;
   i {
     filter: drop-shadow(2px 4px 6px black);
@@ -125,6 +126,11 @@
 @media (max-width: 750px) {
   .icncenter {
       margin-left: 0;
+  }
+}
+@media (max-width: 750px) {
+  .pwrap {
+      border: none;
   }
 }
 
