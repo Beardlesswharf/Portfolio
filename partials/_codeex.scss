@@ -1,9 +1,6 @@
-
-
-  .aboutme {
+.codeex {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     min-height: 100vh;
     // margin-left: 166.766px;
     border-left-width: 172.188px;
@@ -29,9 +26,9 @@
         background-color: rgba(255, 255, 255, 70%); /* Just adjust the color or opacity to make the text pop! */
         box-shadow: inset 0 0 0 50px rgb(255 255 255 / 8%);
       }
-      .wrap-this {
+      .wrap-it {
         padding: 5px 15px;
-        margin: 0 15px;
+        margin: 30px 15px;
         border-bottom: 5px solid #be7eb3;
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
@@ -42,17 +39,18 @@
         box-shadow: inset 0 0 0 200px rgb(255 255 255 / 8%);
       }
   }
-.badges {
+.examples {
   img {
-    max-height: 160px;
-    width: auto;
-    margin: 50px 30px;
+    max-height: 100%;
+    max-width: 100%;
+    padding: 0 15px;
     filter: drop-shadow(2px 4px 6px silver);
   }
+  margin-bottom: 20px;
 }
 
   @media (max-width: 750px) {
-    .aboutme {
+    .codeex {
         border-left: none;
     }
   }

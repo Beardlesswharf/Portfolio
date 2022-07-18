@@ -16,9 +16,13 @@
     flex-direction: row;
     min-height: 100vh;
     background-image: url(../img/t.jpg);
+    background-repeat: no-repeat;
+    object-fit: fill;
+    background-position: center;
+    background-size: cover;
     justify-content: center;
     scroll-snap-align: end;
-    border-left-width: 166.766px;
+    border-left-width: 172.188px;
     border-left-style: solid;
     border-image: linear-gradient(black, #0c44cd) 1;
     justify-content: center;
@@ -51,7 +55,7 @@ h1 {
  #contact-form label { 
     font-size: 15px;  
     margin-bottom: 2px;
-    font-family: 'Mitr', san-serif;
+    font-family: 'Montserrat', san-serif;
  } 
  #contact-form input,   
  #contact-form select,   

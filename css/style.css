@@ -312,7 +312,7 @@ template {
 }
 
 html {
-  font-family: "Mitr", sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: #e6e6eb;
   scroll-snap-type: y mandatory;
 }
@@ -486,7 +486,12 @@ header {
   min-height: 100vh;
   position: relative;
   z-index: -1;
-  border-left-width: 166.766px;
+  background-image: url(../img/t.jpg);
+  background-repeat: no-repeat;
+  object-fit: fill;
+  background-position: center;
+  background-size: cover;
+  border-left-width: 172.188px;
   border-left-style: solid;
   border-image: linear-gradient(#0c44cd, black) 1;
   justify-content: center;
@@ -615,9 +620,13 @@ header {
   flex-direction: row;
   min-height: 100vh;
   background-image: url(../img/t.jpg);
+  background-repeat: no-repeat;
+  object-fit: fill;
+  background-position: center;
+  background-size: cover;
   justify-content: center;
   scroll-snap-align: end;
-  border-left-width: 166.766px;
+  border-left-width: 172.188px;
   border-left-style: solid;
   border-image: linear-gradient(black, #0c44cd) 1;
   justify-content: center;
@@ -649,7 +658,7 @@ h4 {
 #contact-form label {
   font-size: 15px;
   margin-bottom: 2px;
-  font-family: "Mitr", san-serif;
+  font-family: "Montserrat", san-serif;
 }
 
 #contact-form input,
@@ -743,12 +752,16 @@ input:required, textarea:required {
   flex-direction: column;
   justify-content: space-around;
   min-height: 100vh;
-  border-left-width: 166.766px;
+  border-left-width: 172.188px;
   border-left-style: solid;
   border-image: linear-gradient(#0c44cd, black) 1;
   align-items: center;
   text-align: center;
   background-image: url(../img/pexels-cottonbro-9669096.jpg);
+  background-repeat: no-repeat;
+  object-fit: fill;
+  background-position: center;
+  background-size: cover;
 }
 .aboutme h1 {
   margin: 50px 15px;
@@ -782,6 +795,59 @@ input:required, textarea:required {
 
 @media (max-width: 750px) {
   .aboutme {
+    border-left: none;
+  }
+}
+.codeex {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  border-left-width: 172.188px;
+  border-left-style: solid;
+  border-image: linear-gradient(#0c44cd, black) 1;
+  align-items: center;
+  text-align: center;
+  background-image: url(../img/pexels-cottonbro-9669096.jpg);
+  background-repeat: no-repeat;
+  object-fit: fill;
+  background-position: center;
+  background-size: cover;
+}
+.codeex h1 {
+  margin: 50px 15px;
+  padding: 5px 15px;
+  border-top: 5px solid rgba(252, 94, 221, 0.4);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  filter: drop-shadow(2px 4px 6px silver);
+  background-color: rgba(255, 255, 255, 0.7); /* Just adjust the color or opacity to make the text pop! */
+  box-shadow: inset 0 0 0 50px rgba(255, 255, 255, 0.08);
+}
+.codeex .wrap-it {
+  padding: 5px 15px;
+  margin: 30px 15px;
+  border-bottom: 5px solid #be7eb3;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  filter: drop-shadow(2px 4px 6px silver);
+  background-color: rgba(255, 255, 255, 0.7); /* Just adjust the color or opacity to make the text pop! */
+  box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.08);
+}
+
+.examples {
+  margin-bottom: 20px;
+}
+.examples img {
+  max-height: 100%;
+  max-width: 100%;
+  padding: 0 15px;
+  filter: drop-shadow(2px 4px 6px silver);
+}
+
+@media (max-width: 750px) {
+  .codeex {
     border-left: none;
   }
 }
