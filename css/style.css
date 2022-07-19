@@ -592,6 +592,9 @@ header {
   .gal-row {
     margin: 10px;
   }
+  .box {
+    min-width: 250px;
+  }
 }
 [class^=box]:hover {
   -webkit-transform: scale(1.3);

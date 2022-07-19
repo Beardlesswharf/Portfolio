@@ -11,7 +11,7 @@
   min-height: 100vh;
   position: relative;
   z-index: -1;
-  background-image: url(../img/t.jpg);
+  background-image: url(../img/galback.jpg);
   background-repeat: no-repeat;
   object-fit: fill;
   background-position: center;
@@ -151,6 +151,9 @@
   @media (max-width: 750px) {
     .gal-row {
         margin: 10px;
+    }
+    .box {
+      min-width: 250px;
     }
 }
 [class^="box"]:hover {
