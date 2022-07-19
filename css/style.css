@@ -315,6 +315,7 @@ html {
   font-family: "Montserrat", sans-serif;
   background-color: #e6e6eb;
   scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 @media (max-width: 1825px) {
@@ -340,7 +341,6 @@ html {
 .nav ul a {
   display: block;
   color: black;
-  text-align: center;
   padding: 20px 16px;
   text-decoration: none;
 }
@@ -486,7 +486,7 @@ header {
   min-height: 100vh;
   position: relative;
   z-index: -1;
-  background-image: url(../img/t.jpg);
+  background-image: url(../img/galback.jpg);
   background-repeat: no-repeat;
   object-fit: fill;
   background-position: center;
@@ -745,6 +745,7 @@ input:required, textarea:required {
 @media (max-width: 750px) {
   .divvy {
     border: none;
+    padding-left: 5px;
   }
 }
 .aboutme {
@@ -802,7 +803,7 @@ input:required, textarea:required {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  border-left-width: 172.188px;
+  border-left-width: 172.188 px;
   border-left-style: solid;
   border-image: linear-gradient(#0c44cd, black) 1;
   align-items: center;
@@ -851,6 +852,124 @@ input:required, textarea:required {
     border-left: none;
   }
 }
+#menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__box {
+  left: 0 !important;
+}
+
+#menu__toggle {
+  display: none;
+}
+
+.menu__btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 4;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+  transition-duration: 0.25s;
+  z-index: 4;
+}
+
+.menu__btn > span::before {
+  content: "";
+  top: -8px;
+}
+
+.menu__btn > span::after {
+  content: "";
+  top: 8px;
+}
+
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 3;
+  border-right: 3px solid grey;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  transition-duration: 0.25s;
+}
+.menu__box .socmedia {
+  justify-content: center;
+}
+
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: 0.25s;
+  padding-top: 15px;
+}
+
+.menu__item:hover {
+  filter: drop-shadow(2px 4px 6px black);
+  background-color: rgba(255, 255, 255, 0.6); /* Just adjust the color or opacity to make the text pop! */
+  box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.08);
+  border-radius: 2px;
+  color: black;
+}
+
+@media (min-width: 750px) {
+  .hamburger-menu {
+    display: none;
+  }
+}
+.hamburger-menu {
+  height: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5px;
+}
+ul li {
+  padding-top: 5px;
+  text-align: center;
+}
+
 body, html {
   height: 100%;
   margin: 0;
