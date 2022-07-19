@@ -114,14 +114,13 @@ h1 {
     color: black;      
  }
  
- /* Hide success/failure message
-    (especially since the php is missing) */
+
  #failure, #success {
     color: #6EA070; 
     display:none;  
  }
  
- /* Make form look nice on smaller screens */
+ 
  @media only screen and (max-width: 580px) {
     #contact-form{
        left: 3%;
