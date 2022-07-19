@@ -727,14 +727,11 @@ input:required, textarea:required {
   color: black;
 }
 
-/* Hide success/failure message
-   (especially since the php is missing) */
 #failure, #success {
   color: #6EA070;
   display: none;
 }
 
-/* Make form look nice on smaller screens */
 @media only screen and (max-width: 580px) {
   #contact-form {
     left: 3%;
@@ -806,7 +803,7 @@ input:required, textarea:required {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  border-left-width: 172.188 px;
+  border-left-width: 172.188px;
   border-left-style: solid;
   border-image: linear-gradient(#0c44cd, black) 1;
   align-items: center;
@@ -898,7 +895,7 @@ input:required, textarea:required {
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: #616161;
+  background-color: silver;
   transition-duration: 0.25s;
   z-index: 4;
 }
